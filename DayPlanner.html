@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Work Day Scheduler</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-light bg-light">
+        <h1 class="navbar-brand">Work Day Schedule</h1>
+        <h2 class="currentDate"></h2>
+      </nav>
+    <div class="container">
+    <div class="plannerContainer">
+        <div class="planner">
+            <div class="row hours" value="9" id="9"> 
+                <div class="col-md-2">
+                    <span class="time">9:00 AM</span>
+                </div>
+                <div class="col-md-8">
+                    <input id="event1" type="text" class="dailyEvent">
+                </div>   
+                <div class="col-md-2">
+                    <button id="saveEvent1" class="fa fa-save"></button>
+                </div>
+            </div>
+            <div class="row hours" value="10" id="10">
+                <div class="col-md-2">
+                    <span class="time">10:00 AM</span>
+                </div>
+                <div class="col-md-8">
+                    <input id="event2" type="text" class="dailyEvent">
+                </div>   
+                <div class="col-md-2">
+                    <button id="saveEvent2" class="fa fa-save"></button>
+                </div>
+            </div>
+            <div class="row hours" value="11" id="11">
+                <div class="col-md-2">
+                    <span class="time">11:00 AM</span>
+                </div>
+                <div class="col-md-8">
+                    <input id="event3" type="text" class="dailyEvent">
+                </div>   
+                <div class="col-md-2">
+                    <button id="saveEvent3" class="fa fa-save"></button>
+                </div>
+            </div>
+            <div class="row hours" value="12" id="12">
+                <div class="col-md-2">
+                    <span class="time">12:00 PM</span>
+                </div>
+                <div class="col-md-8">
+                    <input id="event4" type="text" class="dailyEvent">
+                </div>   
+                <div class="col-md-2">
+                    <button id="saveEvent4" class="fa fa-save"></button>
+                </div>
+            </div>
+            <div class="row hours" value="13" id="13">
+                <div class="col-md-2">
+                    <span class="time">1:00 PM</span>
+                </div>
+                <div class="col-md-8">
+                    <input id="event5" type="text" class="dailyEvent">
+                </div>   
+                <div class="col-md-2">
+                    <button id="saveEvent5" class="fa fa-save"></button>
+                </div>
+            </div>
+            <div class="row hours" value="14" id="14">
+                <div class="col-md-2">
+                    <span class="time">2:00 PM</span>
+                </div>
+                <div class="col-md-8">
+                    <input id="event6" type="text" class="dailyEvent">
+                </div>   
+                <div class="col-md-2">
+                    <button id="saveEvent6" class="fa fa-save"></button>
+                </div>
+            </div>
+            <div class="row hours" value="15" id="15">
+                <div class="col-md-2">
+                    <span class="time">3:00 PM</span>
+                </div>
+                <div class="col-md-8">
+                    <input id="event7" type="text" class="dailyEvent">
+                </div>   
+                <div class="col-md-2">
+                    <button id="saveEvent7" class="fa fa-save"></span>
+                </div>
+            </div>
+            <div class="row hours" value="16" id="16">
+                <div class="col-md-2">
+                    <span class="time">4:00 PM</span>
+                </div>
+                <div class="col-md-8">
+                    <input id="event8" type="text" class="dailyEvent">
+                </div>   
+                <div class="col-md-2">
+                    <button id="saveEvent8" class="fa fa-save"></button>
+                </div>
+            </div>
+            <div class="row hours" value="17" id="16">
+                <div class="col-md-2">
+                    <span class="time">5:00 PM</span>
+                </div>
+                <div class="col-md-8">
+                    <input id="event9" type="text" class="dailyEvent">
+                </div>   
+                <div class="col-md-2">
+                    <button id="saveEvent9" class="fa fa-save"></button>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
