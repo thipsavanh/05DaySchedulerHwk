@@ -10,6 +10,7 @@ $(document).ready(function(){
 
     var dateHour24 = moment().format('LT');
     var dateHour12 = moment().format('lt');
+    var time = $(".hours");
 
    if (test) {
         dateHour24 = 13;
@@ -18,15 +19,15 @@ $(document).ready(function(){
 
     var row = $(".dailyEvent")
     
-    changeRowColor(row, date);
+    changeRowColor(row, time);
   
-    function changeRowColor (row, date) {
+    function changeRowColor (row, time) {
     if (test) {console.log("rowColor", dateHour24, value);}
 
-    if (date < dateHour24) {
+    if (time < dateHour24) {
         if (test) {console.log("lessThan");}
         row.css("background-color", "lightgray")
-    } else if (date > dateHour24) {
+    } else if (time > dateHour24) {
         if (test) {console.log("greaterThan");}
         row.css("background-color", "lightgreen")
     } else {
